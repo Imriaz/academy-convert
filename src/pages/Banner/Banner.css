@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+.banner {
+  background-image: url(../../images/banner_image.png);
+  height: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background-color: rgba(3, 15, 34, 0.8); */
+}
+
+.banner__title {
+  font-family: "Ubuntu";
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 41.36px;
+  margin-bottom: 8px;
+  color: white;
+}
+
+.banner__title__topic__training {
+  margin-right: 12.67px;
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25.6px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.banner__title__topic__separator {
+  color: white;
+}
+
+.banner__title__topic__cp-training {
+  margin-left: 4.67px;
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25.6px;
+  color: white;
+}
+
+/*--------------
+ Media Queries 
+ ---------------*/
+
+/* Mobile & Tablet Devices */
+
+@media only screen and (max-width: 688px), only screen and (max-width: 992px) {
+  .banner {
+    height: 154px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .banner {
+    height: 164px;
+  }
+
+  .banner__title {
+    font-size: 24px;
+    line-height: 27.58px;
+    margin-bottom: 4px;
+  }
+
+  .banner__title__topic__training {
+    font-size: 16px;
+    line-height: 25.6px;
+  }
+
+  .banner__title__topic__cp-training {
+    font-size: 16px;
+    line-height: 25.6px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .banner {
+    height: 154px;
+  }
+
+  .banner__title {
+    font-size: 24px;
+    line-height: 27.58px;
+  }
+
+  .banner__title__topic__training {
+    font-size: 14px;
+    line-height: 22.4px;
+  }
+
+  .banner__title__topic__cp-training {
+    font-size: 14px;
+    line-height: 22.4px;
+  }
+}
+/*--------------
+ Media Queries End
+ -----------------*/

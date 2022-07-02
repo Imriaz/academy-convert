@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
+
+* {
+  margin: 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 88px;
+  width: 100%;
+  background-color: white;
+}
+
+.nav__logo {
+  margin-left: 10%;
+}
+
+.nav__logo__image {
+  width: 73.6px;
+  height: 80px;
+}
+
+.nav__logo__title {
+  display: none;
+}
+
+.nav__link__container {
+  margin-right: 10%;
+  display: flex;
+}
+
+.nav__link__container__link {
+  list-style: none;
+  margin-right: 32px;
+}
+
+.nav__link__container__down__icon {
+  margin-left: 14px;
+}
+
+.nav__link__container__burger__icon {
+  display: none;
+}
+
+.nav__link__active {
+  color: #0961e7;
+}
+
+@media only screen and (max-width: 688px), only screen and (max-width: 992px) {
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 88px;
+    width: 100%;
+  }
+
+  .nav__logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav__logo__title {
+    display: block;
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 140%;
+  }
+
+  .nav__link__container__link {
+    display: none;
+  }
+  
+  .nav__link__container__burger__icon {
+    display: block;
+  }
+}

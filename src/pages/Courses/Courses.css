@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+.cpcourses {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  background-color: #EEEDF2;
+  padding-bottom: 59px;
+}
+.cpcourses__start-line {
+  margin-top: 64px;
+  margin-bottom: 0px;
+  margin-left: 11%;
+  width: 211px;
+  height: 4px;
+  background-color: #001828;
+}
+.cpcourses__course-text {
+  margin-top: 48px;
+  margin-left: 11%;
+  margin-bottom: 0px;
+  font-family: "Ubuntu";
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 41px;
+  color: #001828;
+}
+.cpcourses__choose {
+  margin-top: 8px;
+  margin-left: 11%;
+  margin-bottom: 0px;
+  font-family: "Ubuntu";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  color: rgba(0, 24, 40, 0.6);
+}
+.cpcourses__courses {
+  margin-top: 32px;
+  margin-bottom: 0px;
+  margin-left: 11%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.cpcourses__courses__item {
+  margin-right: 1.5%;
+  margin-bottom: 5px;
+}
+.cpcourses__courses__item:hover {
+  opacity: 0.5;
+}
+
+@media only screen and (max-width: 688px), only screen and (max-width: 992px) {
+.cpcourses__courses__item {
+  /* margin-right: 1.5%;
+  margin-bottom: 5px;
+  height: 160px;
+  width: 152px; */
+}
+}

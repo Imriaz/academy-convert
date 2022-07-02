@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+.training__section {
+  display: flex;
+  margin: 64px 11.159%;
+  justify-content: space-between;
+  background: #ffffff;
+
+  &__line {
+    width: 211px;
+    height: 4px;
+    margin-bottom: 48px;
+    background: #001828;
+  }
+
+  &__top__title {
+    font-family: "DM Sans";
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 160%;
+    color: #0961e7;
+  }
+
+  &__second__title {
+    font-family: "Ubuntu";
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 41px;
+    color: #001828;
+  }
+
+  &__description {
+    margin: 32px 0;
+    margin-right: 31px;
+    font-family: "DM Sans";
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 160%;
+    color: #001828;
+  }
+
+  &__image {
+    height: 520px;
+    width: 504px;
+  }
+}
+
+/*--------------
+ Media Queries 
+ ---------------*/
+
+/* Tablet Device */
+
+@media only screen and (max-width: 992px) {
+  .training__section {
+    display: flex;
+    margin: 2% 10%;
+    justify-content: space-between;
+    background: #ffffff;
+
+    &__line {
+      width: 64px;
+      height: 4px;
+      margin-bottom: 48px;
+      background: #001828;
+    }
+
+    &__image {
+      width: 289.73px;
+      height: 319px;
+    }
+  }
+}
+
+/* Mobile Device */
+
+@media only screen and (max-width: 688px) {
+  .training__section {
+    display: flex;
+    flex-direction: column;
+    margin: 2% 10%;
+    justify-content: space-between;
+    background: #ffffff;
+
+    &__image {
+      width: 310.15px;
+      height: 320px;
+    }
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .training__section {
+    display: flex;
+    flex-direction: column;
+    margin: 64px 24px;
+    justify-content: space-between;
+    background: #ffffff;
+
+    &__line {
+      width: 64px;
+      height: 4px;
+      margin-bottom: 32px;
+      background: #001828;
+    }
+
+    &__top__title {
+      font-family: "DM Sans";
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 22.4px;
+      margin-bottom: 8px;
+      color: #0961e7;
+    }
+
+    &__second__title {
+      font-family: "Ubuntu";
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 28px;
+      color: #001828;
+    }
+
+    &__description {
+      margin: 32px 0;
+      font-family: "DM Sans";
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 160%;
+      color: #001828;
+    }
+
+    &__image {
+      width: 310.15px;
+      height: 320px;
+    }
+  }
+}
+
+/*--------------
+ Media Queries End
+ -----------------*/
