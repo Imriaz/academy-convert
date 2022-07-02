@@ -6,10 +6,10 @@ import burger_icon from '../../images/burger_icon.png';
 
 const Nav = () => {
   return (
-    <nav title='navbar' className="nav">
+    <nav title="navbar" className="nav">
       <div className="nav__logo">
-        <figure className="nav__logo__image">
-          <img src={logo} alt="academy logo" />
+        <figure>
+          <img className="nav__logo__image" src={logo} alt="academy logo" />
         </figure>
         <figcaption className="nav__logo__title">BJIT Academy</figcaption>
       </div>
@@ -21,12 +21,12 @@ const Nav = () => {
             <img src={down_arrow} alt="down arrow" />
           </span>
         </li>
-        <li data-testid="link-1" className="nav__link__container__link">ABOUT</li>
+        <li data-testid="link-1" className="nav__link__container__link">
+          ABOUT
+        </li>
         <li className="nav__link__container__link">CONTACT</li>
         <li className="nav__link__container__burger__icon">
-          <span>
             <img src={burger_icon} alt="burger icon" />
-          </span>
         </li>
       </ul>
     </nav>

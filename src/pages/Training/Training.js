@@ -28,7 +28,7 @@ const Training = () => {
           to their bright future.{" "}
         </p>
       </article>
-      <div>
+      <div className="training__section__image__container">
         <img
           className="training__section__image"
           src={trainingImage}
