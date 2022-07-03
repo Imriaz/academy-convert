@@ -3,18 +3,12 @@ import Training from "./Training";
 
 it("Find the text", () => {
   render(<Training />);
-  const infoElement = screen.getByText(/BJIT Academy/i);
-  expect(infoElement).toBeInTheDocument();
+  const Element = screen.getByText(/Cross platform training/i);
+  expect(Element).toBeInTheDocument();
 });
 
-it("Is this text contain in this section?", () => {
+it("Rendering Multiple Image", async () => {
   render(<Training />);
-  const infoElement = screen.queryByText(/Training Section/i);
-  expect(infoElement).not.toBeInTheDocument();
-});
-
-it("Is this text contain in this section or not?", () => {
-  render(<Training />);
-  const infoElement = screen.queryByText(/Job Section/i);
-  expect(infoElement).not.toBeInTheDocument();
+  const Element = await screen.findAllByRole("img");
+  expect(Element.length).toBe(1);
 });
