@@ -4,6 +4,7 @@ import Banner from "./pages/Banner/Banner";
 import Training from "./pages/Training/Training";
 import Courses from "./pages/Courses/Courses";
 import Nav from "./pages/Nav/Nav";
+import Footer from "./pages/Footer/Footer";
 
 function App() {
   return (
@@ -11,7 +12,8 @@ function App() {
       <Nav />
       <Banner />
       <Training />
-      <Courses />
+      {/* <Courses /> */}
+      <Footer />
     </div>
   );
 }

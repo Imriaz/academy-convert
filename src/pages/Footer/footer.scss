@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  background: #eeedf2;
+  &__main {
+    display: flex;
+    flex-direction: row;
+    width: unquote(1120/1440 * 100+"%");
+    margin: 64px auto;
+    margin-bottom: 0px;
+    &__logo {
+      height: 142px;
+    }
+    &__cinfo {
+      display: flex;
+      flex-direction: column;
+      margin-left: unquote(72/1120 * 100+"%");
+
+      &__company {
+        margin: 0;
+        font-family: "Ubuntu";
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 32px;
+        color: #001828;
+      }
+
+      &__about {
+        margin-top: 16px;
+        margin-bottom: 0px;
+
+        font-family: "DM Sans";
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 26px;
+
+        color: rgba(0, 24, 40, 0.7);
+      }
+      &__contact {
+        margin-top: 8px;
+        margin-bottom: 0px;
+
+        font-family: "DM Sans";
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 26px;
+
+        color: rgba(0, 24, 40, 0.7);
+      }
+    }
+
+    &__tinfo {
+      display: flex;
+      flex-direction: column;
+      margin-left: unquote(79/1120 * 100+"%");
+
+      &__train {
+        margin: 0;
+        font-family: "Ubuntu";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 32px;
+
+        color: #001828;
+      }
+
+      &__talent {
+        margin-top: 16px;
+        margin-bottom: 0px;
+
+        font-family: "DM Sans";
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 26px;
+
+        color: rgba(0, 24, 40, 0.7);
+      }
+      &__cross {
+        margin-top: 8px;
+        margin-bottom: 0px;
+
+        font-family: "DM Sans";
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 26px;
+
+        color: rgba(0, 24, 40, 0.7);
+      }
+    }
+
+    &__sub {
+      width: unquote(371/1120 * 100+"%");
+      margin-left: unquote(205.36/1120 * 100+"%");
+      &__touch {
+        margin: 0;
+        font-family: "Ubuntu";
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 32px;
+        color: #001828;
+      }
+      &__cont {
+        margin: 0px;
+      }
+
+      &__cont__email {
+        width: 100%;
+        height: 48px;
+        background: #ffffff;
+        border: 1px solid #e1e1e1;
+        border-radius: 4px;
+        &::placeholder {
+          font-family: "DM Sans";
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 26px;
+
+          color: #a4a4a4;
+        }
+      }
+      &__cont__sub {
+        height: 48px;
+        background: #0961e7;
+        border-radius: 4px;
+        border-color: #0961e7;
+        font-family: "DM Sans";
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 26px;
+
+        color: #ffffff;
+      }
+    }
+  }
+
+  &__middle-line {
+    width: unquote(1120/1440 * 100+"%");
+    margin: 54px auto;
+    margin-bottom: 0px;
+    height: 2px;
+    background: rgba(0, 24, 40, 0.2);
+    border-radius: 4px;
+  }
+
+  &__end-info {
+    display: flex;
+    flex-direction: row;
+    width: unquote(1120/1440 * 100+"%");
+    margin: 0 auto;
+    &__copyright {
+      margin-top: 31px;
+      margin-bottom: 0px;
+      font-family: "DM Sans";
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 19px;
+
+      color: rgba(0, 24, 40, 0.6);
+    }
+
+    &__cp-image {
+      margin-left: 4px;
+      margin-right: 4px;
+      margin-top: 35.75px;
+      width: 10.5px;
+      height: 10.5px;
+    }
+    &__follow {
+      margin-left: unquote(542/1120 * 100+"%");
+      margin-top: 24px;
+
+      font-family: "Ubuntu";
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 32px;
+
+      color: #001828;
+    }
+
+    &__youtube {
+      margin-top: 26px;
+      margin-left: unquote(25/1120 * 100+"%");
+      width: 32px;
+      height: 32px;
+    }
+    &__linkedin {
+      margin-top: 26px;
+      margin-left: unquote(13/1120 * 100+"%");
+      width: 32px;
+      height: 32px;
+    }
+    &__facebook {
+      margin-top: 26px;
+      margin-left: unquote(13/1120 * 100+"%");
+      width: 32px;
+      height: 32px;
+    }
+  }
+}
+
+@media screen and (max-width: 994px) {
+  .footer-container {
+    &__main {
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      &__sub {
+        margin-top: 20px;
+        width: 100%;
+        margin-left: 0 auto;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 968px) {
+  .footer-container {
+    &__end-info {
+      &__follow {
+        margin-left: unquote(300/1120 * 100+"%");
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .footer-container {
+    &__end-info {
+      &__follow {
+        margin-left: unquote(100/1120 * 100+"%");
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 583px) {
+  .footer-container {
+    &__main {
+      &__tinfo {
+        margin-top: 20px;
+      }
+    }
+    &__end-info {
+      flex-wrap: wrap;
+      &__follow {
+        margin-left: unquote(200/1120 * 100+"%");
+      }
+    }
+  }
+}
